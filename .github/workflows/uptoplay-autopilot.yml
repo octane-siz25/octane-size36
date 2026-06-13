@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "0 0 */6 * *"
+    - cron: "0 */6 * * *"
 
 jobs:
   run-bot:
@@ -49,7 +49,7 @@ jobs:
             timeout 340m xvfb-run \
               --auto-servernum \
               --server-args="-screen 0 1280x960x24" \
-              node scrypt1a.js || echo "Cycle terminé ou timeout atteint"
+              node scrypt9a.js || echo "Cycle terminé ou timeout atteint"
 
             echo "--- REPOS (30 SECONDES) ---"
             sleep 30
